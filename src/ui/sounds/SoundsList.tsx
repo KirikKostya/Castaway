@@ -5,9 +5,9 @@ import SoundCloud from '../svg/SoundCloud';
 import Fourth from '../svg/Fourth';
 import Fifth from '../svg/Fifth';
 
-const SoundsList:React.FC = () => {
+const SoundsList:React.FC<{className:string}> = ({className}) => {
   return (
-    <div className='flex items-center cursor-pointer'>
+    <div className={className}>
         <Spotify />
         <Second />
         <SoundCloud />
